@@ -1,0 +1,48 @@
+// SPDX-License-Identifier: Unlincensed
+
+ 
+pragma solidity >=0.7.0;
+
+contract metaCrafters {
+    uint public integerValue;
+    string public stringValue;
+    bool public boolValue;
+    address public addressValue;
+
+        // Set and return the value of the integer variable
+        function setIntegerValue(uint new_Value) public returns (uint) {
+            integerValue = new_Value;
+            return integerValue;
+        }
+         // Get the value of the integer variable
+         function getIntegerValue() public view returns (uint) {
+            return integerValue;
+         }
+        // set and returns the value of the String variable
+        function setStringValue(string memory new_string) public returns (string memory) {
+            stringValue = new_string;
+            return stringValue;
+        }
+          // Get the value of the string variable
+        function getStringValue() public view returns (string memory) {
+            return stringValue;
+        }
+        // Set and return the value of the bool variable
+       function setBoolValue(bool new_Value) public returns (bool) {
+        boolValue = new_Value;
+        return boolValue;
+       }
+       // Get the value of the string variable
+       function getBoolValue() public view returns (bool) {
+        return boolValue;
+       }
+         // Set and return the value of the address variable
+         function setAddressValue(address new_Value) public returns (address) {
+            addressValue = new_Value;
+            return addressValue;
+         }
+          // Get the value of the address variable
+          function getAdressValue() public view returns (address) {
+            return addressValue;
+          }
+}
