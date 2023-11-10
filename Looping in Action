@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract LoopStressTest {
+    function simpleLoop(uint256 iterations) public pure returns (uint256) {
+        uint256 result = 0;
+        uint256 i = 0;
+        while (i < iterations) {
+            result += 1;
+            i++;
+        }
+        return result;
+    }
+}
